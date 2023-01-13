@@ -19,7 +19,7 @@ public class Board : MonoBehaviour
     [SerializeField] private Row[] rows;
     [SerializeField] private Peg[] secretRowPegs;
     [SerializeField] private AppManager appmanager;
-    private int[] SecretRow;
+    [SerializeField] private int[] SecretRow;
     private int ActualLine = 0;
 
     void Start()
@@ -35,7 +35,7 @@ public class Board : MonoBehaviour
         for (int i = 0; i < SecretRow.Length; i++)
         {
             SecretRow[i] = Random.Range(0, appmanager.CodePegs.Length);
-            secretRowPegs[i].GetComponent<MeshRenderer>().material.SetColor("Color", appmanager.CodePegs[SecretRow[i]]);
+            secretRowPegs[i].gameObject.GetComponent<MeshRenderer>().material.SetColor("_Color", appmanager.CodePegs[SecretRow[i]]);
         }
     }
 

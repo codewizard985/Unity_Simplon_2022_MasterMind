@@ -8,6 +8,17 @@ public class AppManager : MonoBehaviour
     public Color[] CodePegs;    // answers pegs
     public Color[] KeyPegs;     // results pegs
 
+    Color[] colors = new Color[] { Color.red, Color.blue, Color.green, Color.yellow, Color.magenta, Color.cyan };
+    private int currentColor, length;
+    // Use this for initialization
+
+    //void Start()
+    //{
+    //    currentColor = 0; // Red
+    //    length = colors.Length;
+    //    GetComponent<MeshRenderer>().material.color = colors[currentColor];
+    //}
+
     void Update()
     {
         // This property is null if the ray hit nothing and not-null if it hit a Collider.
@@ -19,6 +30,7 @@ public class AppManager : MonoBehaviour
          *  **/
         if (Input.GetMouseButtonDown(0))    // Left button = primary button
         {
+            Debug.Log("clic !!!");
             /**
              * Raycast in Unity is a Physics function that projects a Ray into the scene, returning a boolean value if a target was successfully hit. 
              * When this happens, information about the hit, such as the distance, position or a reference to the object’s Transform, can be stored in a Raycast Hit variable for further use.
@@ -38,7 +50,10 @@ public class AppManager : MonoBehaviour
             {
                 if (hit.collider.GetComponent<Peg>() != null)   // Collider components define the shape of an object for the purposes of physical collisions.
                 {
+                    Debug.Log("clic on Peg!!!");  
 
+                    //currentColor = (currentColor + 1) % length;
+                    //GetComponent<MeshRenderer>().material.color = colors[currentColor];
                     hit.collider.GetComponent<Peg>().ChangeColor();
                 }
             }

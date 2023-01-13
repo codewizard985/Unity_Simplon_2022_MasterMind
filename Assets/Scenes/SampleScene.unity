@@ -719,10 +719,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.169
       objectReference: {fileID: 0}
+    - target: {fileID: 8757675613884528355, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748c39f52ca5bb14eac9034a7e3176a9, type: 2}
     - target: {fileID: 8757675613884528365, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
       propertyPath: appmanager
       value: 
       objectReference: {fileID: 919132148123376733}
+    - target: {fileID: 8757675614546353733, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748c39f52ca5bb14eac9034a7e3176a9, type: 2}
     - target: {fileID: 8757675614546353735, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
       propertyPath: appmanager
       value: 
@@ -779,6 +787,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.169
       objectReference: {fileID: 0}
+    - target: {fileID: 8757675615156735650, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748c39f52ca5bb14eac9034a7e3176a9, type: 2}
     - target: {fileID: 8757675615156735655, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
       propertyPath: m_Name
       value: CodePeg 1
@@ -819,6 +831,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.169
       objectReference: {fileID: 0}
+    - target: {fileID: 8757675615604414447, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748c39f52ca5bb14eac9034a7e3176a9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc80b83657a2814385e7d155f5a4e1a, type: 3}
 --- !u!4 &126163264 stripped
@@ -2690,6 +2706,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21e47080c5fe4743b904663c09419ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1067879614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6217504964488877787, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
+  m_PrefabInstance: {fileID: 6523580623160822401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1104048507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4448,7 +4469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1570613889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5522,7 +5543,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6523580621829471430, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
   m_PrefabInstance: {fileID: 6523580623160822401}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1067879614}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0499d254c69cf6f46bed6b644ebe8000, type: 3}
@@ -5533,7 +5554,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6523580621829471431, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
   m_PrefabInstance: {fileID: 6523580623160822401}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1067879614}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6603f310fe830b845886ef9529abbf86, type: 3}
@@ -5544,6 +5565,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6702151735062170721, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
   m_PrefabInstance: {fileID: 6523580623160822401}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &919132148123376735
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067879614}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 748c39f52ca5bb14eac9034a7e3176a9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &6523580623160822401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5809,11 +5872,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6523580621829471431, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
       propertyPath: CodePegs.Array.data[4].b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6523580621829471431, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
       propertyPath: CodePegs.Array.data[4].g
-      value: 0.65882355
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6523580621829471431, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
       propertyPath: CodePegs.Array.data[4].r
@@ -5825,15 +5888,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6523580621829471431, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
       propertyPath: CodePegs.Array.data[5].b
-      value: 0.7913804
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6523580621829471431, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
       propertyPath: CodePegs.Array.data[5].g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6523580621829471431, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
       propertyPath: CodePegs.Array.data[5].r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6523580621861033437, guid: 1dfecd78775e4d742aab690d8a445962, type: 3}
       propertyPath: m_LocalPosition.z

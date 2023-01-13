@@ -40,10 +40,12 @@ public class Peg : MonoBehaviour
         {
             ActualColorNumber++;
         }
-        GetComponent<MeshRenderer>().material.SetColor("Color", appmanager.CodePegs[ActualColorNumber]);
+        Debug.Log("change color = " + ActualColorNumber);
+
+        GetComponent<MeshRenderer>().material.SetColor("_Color", appmanager.CodePegs[ActualColorNumber]);
     }
     public void ChangeColor(int resultColorNumber)
     {
-        GetComponent<MeshRenderer>().material.SetColor("Color", appmanager.KeyPegs[resultColorNumber]);
+        GetComponent<MeshRenderer>().material.SetColor("_Color", appmanager.KeyPegs[resultColorNumber]);
     }
 }
